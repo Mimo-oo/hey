@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./dist/output.css">
+</head>
+<body>
+    <header class="h-12 flex justify-between mx-4 my-2 items-center">
+        <div>
+            <h3 class="text-blue-700 text-lg"><b>Travelerz</b></h3>
+        </div>
+        <div class="hidden md:block" id="menu">
+            <a class="m-4" href="#home">Home</a>
+            <a class="m-4" href="#home">About</a>
+            <a class="m-4" href="#home">Tours</a>
+            <a class="m-4" href="#home">Blog</a>
+            <a class="m-4" href="#home">Contact us</a>
+        </div>
+        <div class="hidden md:block m-4">
+            <button class="m-2 border-none bg-blue-700 text-white py-2 px-6 rounded-full" type="button">Log in</button>
+            <button class="m-2 border-none" type="button">Sign up</button>
+        </div>
+        <div class="md:hidden cursor-pointer" onclick="fun()" >
+            <div>PP</div>
+        </div>
+    </header>
+    <div class=" bg-blue-700 text-white hidden " id="nav">
+        <ul>
+            <li><a class="block p-2 hover:bg-blue-900" href="#home">Home</a></li>
+            <li><a class="block p-2 hover:bg-blue-900" href="#home">About</a></li>
+            <li><a class="block p-2 hover:bg-blue-900" href="#home">Tours</a></li>
+            <li><a class="block p-2 hover:bg-blue-900" href="#home">Blog</a></li>
+            <li><a class="block p-2 hover:bg-blue-900" href="#home">Contact us</a></li>
+        </ul>
+    </div>
+    <section class="my-8 mx-4 md:relative">
+        <p class="text-gray-400 mt-14">Explore the world</p>
+        <div class="md:w-1/2">
+            <h1 class="mt-7 text-5xl leading-normal font-mono font-bold">Let's create best memories all over the <span class="text-blue-700">world</span></h1>
+        </div>
+        <p class="text-gray-600 mt-8 w-2/3 md:w-[27%]">The biggest adventure you can take is to live the life of your dreams</p>
+        <div class="flex-col md:w-1/2 md:h-16 md:bg-white md:border-2 md:border-blue-100 md:shadow-lg rounded-full my-8 flex md:flex-row md:justify-around md:items-center">
+            <div class="my-2 md:m-0">
+                <p>Destination</p>
+                <h4><b>London, England</b></h4>
+            </div>
+            <div class="my-2 md:m-0">
+                <p>Date</p>
+                <h4><b>24 Jul, 2022</b></h4>
+            </div>
+            <div class="my-2 md:m-0">
+                <button class="bg-blue-700 text-white rounded-full py-2 px-3 md:py-2 md:px-4 hover:bg-blue-900" type="button">Search now</button>
+            </div>
+
+        </div>
+        <div class="w-full md:w-[40%] bg-blue-400/10 rounded-3xl md:absolute top-7 right-7">
+            <div class="m-2 p-4">
+                <label class="font-medium text-blue-700">Enter your Email</label><br>
+                <input class="w-full p-2 my-2" type="email" placeholder="yourmail@example.com"><br>
+                <label class="font-medium text-blue-700">Enter your Password</label><br>
+                <input class="w-full p-2 my-2" type="password" placeholder="1234567"><br>
+                <div class="flex mt-2 w-full"><input  type="checkbox">
+                    <p>Remember me</p>
+                    <p class="absolute right-10 md:right-6" >Forget password</p>
+                </div>
+                <button class="mt-4 bg-blue-700 w-full p-2 text-white text-lg hover:bg-blue-900" type="button">Sign in</button>
+                <div class="flex items-center justify-between my-6"><div class="border-t-2 w-[40%] border-black"></div><diV>OR</diV><div class="border-t-2 w-[40%] border-black"></div></div>
+                <button class="max-w-[40%] md:max-w-[50%] py-2 px-2 md:px-8 border-2 border-gray-500 rounded-lg mt-2 hover:bg-blue-900 hover:text-white hover:border-none" type="button">Sign up with Google</button>
+                <button class="max-w-[40%] md:max-w-[50%] py-2 px-2 md:px-8 border-2 border-gray-500 rounded-lg mt-2 float-right  hover:bg-blue-900 hover:text-white hover:border-none" type="button">Sign up with Facebook</button>
+                <p class="mt-4 text-center">Don't have an account? <span class="text-blue-700">Sign up</span></p>
+            </div>
+        </div>
+    </section>
+    
+
+    
+ <script src="script.js"></script>   
+</body>
+</html>
